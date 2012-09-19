@@ -1,0 +1,55 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+html {
+  background-color: #d4d1cc;
+  color: #251c09;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, Garamond, serif;
+  color: #251c09;
+}
+a,
+a:visited {
+  color: #251c09;
+}
+a:hover {
+  color: #834111;
+  color: #796a4c;
+}
+/* This is a direct port from django */
+nav {
+  padding: 10px 0 0 0;
+}
+nav li {
+  list-style-type: square;
+  color: #796a4c;
+  font-size: 52.5px;
+  line-height: 21px;
+}
+nav li a {
+  font-size: 21px;
+  position: relative;
+  top: -10.5px;
+  left: -10.5px;
+}
+nav ul.breadcrumbs {
+  position: relative;
+  list-style-type: none;
+  padding: 10px 0 10px 0;
+  margin: 0;
+}
+nav ul.breadcrumbs li {
+  display: inline;
+  font-size: 12px;
+}
+nav ul.breadcrumbs li a {
+  font-size: 12px;
+  position: inherit;
+}
