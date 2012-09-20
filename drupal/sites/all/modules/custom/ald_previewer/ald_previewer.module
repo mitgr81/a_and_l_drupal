@@ -1,0 +1,46 @@
+<?php
+/**
+ * Implements hook_menu().
+ */
+function ald_previewer_menu() {
+    return array(
+        'zzzzz' => array(
+            'title' => t('Previewer'),
+            'page callback' => 'ald_previewer_main',
+            'access arguments' => array('access content'),
+            'type' => MENU_NORMAL_ITEM,
+        )
+    );
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ald_previewer_theme() {
+    return array(
+        'ald_previewer' => array(
+            'variables' => array('ald_theme' => 'baby_color', 'name' => ''),
+            'template' => 'ald_previewer',
+        ),
+    );
+}
+
+function ald_previewer_main($name='', $theme='baby_color') {
+    drupal_add_css(drupal_get_path('module', 'ald_previewer') . "/css/previewer.css");
+    drupal_add_js(drupal_get_path('module', 'ald_previewer') . "/js/previewer.js");
+    return theme('ald_previewer', array('ald_theme' => $theme, 'name' => $name));
+}
+
+
+function ald_image_path($image_name=''){
+    return '/' . drupal_get_path('module', 'ald_previewer') . "/images/$image_name";
+}
+
+function template_preprocess_ald_previewer(&$vars) {
+    $settings = array(
+        'path' => ald_image_path(),
+        'name' => $vars['name'],
+        'theme' => $vars['ald_theme'],
+    );
+    $vars['ald_settings'] = json_encode($settings);
+}
