@@ -17,7 +17,7 @@
                 $echo.empty();
                 for (var textchar in text) {
                     var my_character = text.charAt(textchar),
-                        $img = $('<img>');
+                        $img = $('<img>').addClass('ald-image');
                     $img.attr('src', path + my_character.toLowerCase() + '.png');
                     $img.attr('alt', my_character);
                     $img.attr('title', my_character);
