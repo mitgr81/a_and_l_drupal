@@ -4,7 +4,7 @@
  */
 function ald_previewer_menu() {
     return array(
-        'zzzzz' => array(
+        'previewer' => array(
             'title' => t('Previewer'),
             'page callback' => 'ald_previewer_main',
             'access arguments' => array('access content'),
