@@ -1,0 +1,15 @@
+name = A & L Designs Alphabetter
+description = Photo Alphabet menus and such for A&L Designs by Chris McGraw
+core = 7.x
+package = A&L Custom
+version = 7.x-1.0
+project = ald_alphabetter
+dependencies[] = features
+dependencies[] = field_sql_storage
+dependencies[] = image
+dependencies[] = node
+dependencies[] = text
+features[features_api][] = api:1
+features[field][] = node-ald_letter-body
+features[field][] = node-ald_letter-field_image
+features[node][] = ald_letter

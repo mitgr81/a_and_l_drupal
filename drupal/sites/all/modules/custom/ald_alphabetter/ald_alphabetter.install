@@ -1,0 +1,5 @@
+<?php
+
+function ald_alphabetter_enable(){
+    variable_set('site_frontpage', 'welcome');
+}

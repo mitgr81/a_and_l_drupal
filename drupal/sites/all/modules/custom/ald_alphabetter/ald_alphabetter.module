@@ -1,0 +1,49 @@
+<?php
+/**
+ * @file
+ * Code for the ald_alphabetter feature.
+ */
+
+include_once 'ald_alphabetter.features.inc';
+
+/**
+ * Implements hook_menu().
+ */
+function ald_alphabetter_menu() {
+    return array(
+        'welcome' => array(
+            'page callback' => 'ald_alphabetter_welcome_page',
+            'access arguments' => array('access content'),
+            'type' => MENU_NORMAL_ITEM,
+        )
+    );
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ald_alphabetter_theme() {
+    return array(
+        'ald_alphabetter_welcome' => array(
+            'template' => 'ald_alphabetter_welcome',
+        ),
+    );
+}
+
+function ald_alphabetter_welcome_page() {
+    return theme('ald_alphabetter_welcome');
+}
+
+
+// function ald_image_path($image_name=''){
+//     return '/' . drupal_get_path('module', 'ald_alphabetter') . "/images/$image_name";
+// }
+
+// function template_preprocess_ald_alphabetter(&$vars) {
+//     $settings = array(
+//         'path' => ald_image_path(),
+//         'name' => $vars['name'],
+//         'theme' => $vars['ald_theme'],
+//     );
+//     $vars['ald_settings'] = json_encode($settings);
+// }%
