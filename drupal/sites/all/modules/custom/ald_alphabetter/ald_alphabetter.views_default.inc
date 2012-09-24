@@ -62,11 +62,16 @@ function ald_alphabetter_views_default_views() {
   $handler->display->display_options['filters']['field_alphabet_tid']['id'] = 'field_alphabet_tid';
   $handler->display->display_options['filters']['field_alphabet_tid']['table'] = 'field_data_field_alphabet';
   $handler->display->display_options['filters']['field_alphabet_tid']['field'] = 'field_alphabet_tid';
+  $handler->display->display_options['filters']['field_alphabet_tid']['value'] = array(
+    5 => '5',
+    7 => '7',
+  );
   $handler->display->display_options['filters']['field_alphabet_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_alphabet_tid']['expose']['operator_id'] = 'field_alphabet_tid_op';
   $handler->display->display_options['filters']['field_alphabet_tid']['expose']['label'] = 'Alphabet (field_alphabet)';
   $handler->display->display_options['filters']['field_alphabet_tid']['expose']['operator'] = 'field_alphabet_tid_op';
   $handler->display->display_options['filters']['field_alphabet_tid']['expose']['identifier'] = 'field_alphabet_tid';
+  $handler->display->display_options['filters']['field_alphabet_tid']['expose']['required'] = TRUE;
   $handler->display->display_options['filters']['field_alphabet_tid']['expose']['remember'] = TRUE;
   $handler->display->display_options['filters']['field_alphabet_tid']['expose']['remember_roles'] = array(
     2 => 0,
