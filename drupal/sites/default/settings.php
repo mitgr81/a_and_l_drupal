@@ -207,8 +207,8 @@ $databases = array (
     array (
       'database' => 'xxmomdev2',
       'username' => 'momdev2',
-      'password' => 'FwiMKK96uwgASx',
-      'host' => 'mysql.mitgr81.com',
+      'password' => '1pass234',
+      'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
       'prefix' => '',
@@ -246,7 +246,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = 'DqBj_EsBBwdcUJFpE7ICks0dTmoQaQL9dnqQji8foGc';
+$drupal_hash_salt = 'dnpvlLuPeug4a6vkQIiEb_1QyCQA9N9g78gEgAcLtOM';
 
 /**
  * Base URL (optional).
