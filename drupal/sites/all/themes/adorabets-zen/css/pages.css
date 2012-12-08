@@ -223,6 +223,30 @@ span.field-label { /* The inline field label used by the Fences module */
 #footer {
 }
 
+#footer .menu li {
+  width: 6em;
+  height: 6em;
+  -webkit-border-radius: 3em;
+  -moz-border-radius: 3em;
+  border: 0.2em solid blue;
+  background-color: #000099;
+  text-align: center;
+  margin-top: 2.5em;
+  display: block;
+  float: left;
+  margin: 0 6em;
+}
+
+#footer .menu li a{
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 2.5em !important;
+  display: block;
+}
+
+
 /*
  * Page bottom
  */

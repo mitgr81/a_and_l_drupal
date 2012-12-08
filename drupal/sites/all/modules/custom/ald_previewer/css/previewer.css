@@ -5,3 +5,20 @@
 .ald-image {
     width: 10%;
 }
+
+.block-ald-previewer {
+    text-align: center;
+}
+
+#ald-echo img:first-child {
+    border-left: 16px solid black;
+}
+
+#ald-echo img {
+    border-top: 16px solid black;
+    border-bottom: 16px solid black;
+}
+
+#ald-echo img:last-child {
+    border-right: 16px solid black;
+}
