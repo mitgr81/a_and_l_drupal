@@ -23,6 +23,9 @@
                         $img.attr('alt', my_character);
                         $img.attr('title', my_character);
                         $echo.append($img);
+                    } else {
+                        var $spacer = $('<div>').addClass('ald-spacer');
+                        $echo.append($spacer);
                     }
                 }
                 $echo.fadeIn();
