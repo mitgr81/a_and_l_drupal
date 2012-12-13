@@ -248,9 +248,12 @@ span.field-label {
 /* line 220, ../sass/pages.scss */
 .feed-icon {
   /* The link to the RSS or Atom feed for the current list of content */
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
-/* line 223, ../sass/pages.scss */
+/* line 226, ../sass/pages.scss */
 .more-link {
   /* Aggregator, blog, and forum more link */
 }
@@ -273,7 +276,7 @@ span.field-label {
 /*
  * Page bottom
  */
-/* line 257, ../sass/pages.scss */
+/* line 260, ../sass/pages.scss */
 .region-bottom {
   /* Wrapper for any blocks placed in the page bottom region */
 }

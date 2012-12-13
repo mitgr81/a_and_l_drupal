@@ -218,6 +218,9 @@ span.field-label { /* The inline field label used by the Fences module */
 }
 
 .feed-icon { /* The link to the RSS or Atom feed for the current list of content */
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 .more-link { /* Aggregator, blog, and forum more link */

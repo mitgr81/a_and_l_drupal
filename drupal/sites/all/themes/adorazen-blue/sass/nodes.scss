@@ -32,6 +32,11 @@
 }
 
 .node-promoted { /* A node that has been promoted to the front page */
+  header {
+    .node-title {
+      display: none;
+    }
+  }
 }
 
 .node-sticky { /* A sticky node (displayed before others in a list) */
