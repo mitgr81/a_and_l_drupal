@@ -39,22 +39,36 @@
 .node-promoted {
   /* A node that has been promoted to the front page */
 }
-/* line 36, ../sass/nodes.scss */
-.node-promoted header .node-title {
-  display: none;
+/* line 37, ../sass/nodes.scss */
+.node-promoted header .node-title a {
+  color: #00a5c4;
+  text-decoration: none;
+  font-size: 4.5em;
+  white-space: nowrap;
+  font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif;
+}
+/* line 44, ../sass/nodes.scss */
+.node-promoted header .node-title:before {
+  content: "presents";
+  color: #f7931b;
+  font-family: papyrus;
+  font-size: 2em;
+  position: relative;
+  top: -2em;
+  left: 2em;
 }
 
-/* line 42, ../sass/nodes.scss */
+/* line 57, ../sass/nodes.scss */
 .node-sticky {
   /* A sticky node (displayed before others in a list) */
 }
 
-/* line 45, ../sass/nodes.scss */
+/* line 60, ../sass/nodes.scss */
 .node-by-viewer {
   /* A node created by the current user */
 }
 
-/* line 48, ../sass/nodes.scss */
+/* line 63, ../sass/nodes.scss */
 .node-teaser {
   /* A node displayed as teaser */
 }
@@ -64,23 +78,23 @@
  * it is. If you create a new content type called "my-custom-type", it will
  * receive a "node-my-custom-type" class.
  */
-/* line 57, ../sass/nodes.scss */
+/* line 72, ../sass/nodes.scss */
 .node-page {
   /* Page content node */
 }
 
-/* line 60, ../sass/nodes.scss */
+/* line 75, ../sass/nodes.scss */
 .node-article {
   /* Article content node */
 }
 
-/* line 63, ../sass/nodes.scss */
+/* line 78, ../sass/nodes.scss */
 .node-unpublished {
   /* Unpublished nodes */
   /* background-color: #fff4f4; */
   /* Drupal core uses a #fff4f4 background */
 }
-/* line 66, ../sass/nodes.scss */
+/* line 81, ../sass/nodes.scss */
 .node-unpublished p.unpublished {
   /* The word "Unpublished" displayed underneath the content. */
   height: 0;

@@ -34,7 +34,22 @@
 .node-promoted { /* A node that has been promoted to the front page */
   header {
     .node-title {
-      display: none;
+      a {
+        color: $other-blue;
+        text-decoration: none;
+        font-size: 4.5em;
+        white-space: nowrap;
+        font-family: $helvetica;
+      }
+      &:before {
+        content: "presents";
+        color: $orangey;
+        font-family: papyrus;
+        font-size: 2em;
+        position: relative;
+        top: -2em;
+        left: 2em;
+      }
     }
   }
 }

@@ -136,6 +136,8 @@
       <?php endif; ?>
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
+      <hr class="decorative-bar long skinny"/>
+      <hr class="decorative-bar short fat"/>
     </div><!-- /#content -->
 
     <?php

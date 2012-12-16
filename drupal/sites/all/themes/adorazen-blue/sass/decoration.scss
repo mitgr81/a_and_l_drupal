@@ -1,0 +1,28 @@
+@import "base";
+
+.decorative-bar {
+    border: 0;
+    margin: 0.5em auto;
+    width: 50%;
+    height: 0.1em;
+    background-color: $other-blue;
+    &.long{
+        width: 70%;
+    }
+    &.skinny{}
+    &.fat{
+        height: 0.4em;
+    }
+    &.short{
+    }
+}
+
+$diameter: 3em;
+.decorative-circle {
+    width: $diameter;
+    height: $diameter;
+    border-radius: $diameter / 2;
+    background-color: $blue-or-so;
+    float: right;
+    margin: 0 1em;
+}
