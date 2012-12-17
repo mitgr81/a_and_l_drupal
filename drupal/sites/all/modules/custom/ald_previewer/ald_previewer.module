@@ -36,7 +36,7 @@ function ald_image_path($image_name=''){
 
 function template_preprocess_ald_previewer(&$vars) {
     drupal_add_css(drupal_get_path('module', 'ald_previewer') . "/css/previewer.css");
-    drupal_add_js(drupal_get_path('module', 'ald_previewer') . "/js/previewer.js");
+    drupal_add_js(drupal_get_path('module', 'ald_previewer') . "/js/previewer-min.js");
     $settings = array(
         'path' => ald_image_path(),
         'name' => $vars['name'],
