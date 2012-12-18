@@ -137,7 +137,7 @@
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
       <hr class="decorative-bar long skinny"/>
-      <hr class="decorative-bar short fat"/>
+      <hr class="decorative-bar short"/>
     </div><!-- /#content -->
 
     <?php
