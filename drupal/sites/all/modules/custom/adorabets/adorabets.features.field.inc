@@ -85,7 +85,7 @@ function adorabets_field_default_fields() {
   $fields['node-article-field_image'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_image',
@@ -105,7 +105,7 @@ function adorabets_field_default_fields() {
       'locked' => '0',
       'module' => 'image',
       'settings' => array(
-        'default_image' => FALSE,
+        'default_image' => 0,
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -124,7 +124,7 @@ function adorabets_field_default_fields() {
             'image_style' => 'large',
           ),
           'type' => 'image',
-          'weight' => '-1',
+          'weight' => -1,
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -134,7 +134,7 @@ function adorabets_field_default_fields() {
             'image_style' => 'medium',
           ),
           'type' => 'image',
-          'weight' => '-1',
+          'weight' => -1,
         ),
       ),
       'entity_type' => 'node',
@@ -155,6 +155,16 @@ function adorabets_field_default_fields() {
       'widget' => array(
         'module' => 'image',
         'settings' => array(
+          'insert' => 0,
+          'insert_absolute' => FALSE,
+          'insert_class' => '',
+          'insert_default' => array(
+            0 => 'auto',
+          ),
+          'insert_styles' => array(
+            0 => 'auto',
+          ),
+          'insert_width' => '',
           'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
         ),
@@ -209,14 +219,14 @@ function adorabets_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '10',
+          'weight' => 10,
         ),
         'teaser' => array(
           'label' => 'above',
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '10',
+          'weight' => 10,
         ),
       ),
       'entity_type' => 'node',

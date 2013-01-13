@@ -49,6 +49,8 @@ function ald_previewer_block_info(){
      // This example comes from node.module.
   $blocks['ald_previewer'] = array(
     'info' => t('ALD Previewer'),
+    'visibility' => BLOCK_VISIBILITY_LISTED,
+    'pages' => "<front>",
   );
   return $blocks;
 }

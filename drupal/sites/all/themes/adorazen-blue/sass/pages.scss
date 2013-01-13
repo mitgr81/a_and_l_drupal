@@ -46,7 +46,7 @@ body {
  */
 
 #header {
-  margin-bottom: 2em;
+  // margin-bottom: 2em;
 }
 
 #logo { /* Wrapping link for logo */
@@ -60,13 +60,13 @@ body {
 }
 
 $stripe-color: rgba(0, 166, 196, 1);
-$stripe-size: 15px;
+$stripe-size: 9px;
 $stripe-count: 36;
 
 #name-and-slogan { /* Wrapper for website name and slogan */
   position: relative;
   float: left;
-  height: 6em;
+  height: 4em;
   margin-top: 1em;
   width: $stripe-count * $stripe-size;
 
@@ -86,14 +86,14 @@ $stripe-count: 36;
 
 #site-name { /* The name of the website */
   margin: 0 0 0 0.1em;
-  font-size: 10em;
+  font-size: 6em;
   white-space: nowrap;
   line-height: 1.8em;
   font-family: $georgia;
   color: $blue-or-so;
   span {
 
-    text-shadow: 0.05em 0.02em 0.2em #ccc;
+    text-shadow: 0.07em 0.05em 0.2em #999;
   }
 
   a:link,

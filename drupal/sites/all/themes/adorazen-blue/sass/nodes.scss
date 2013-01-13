@@ -21,6 +21,7 @@
   }
 
   .submitted { /* The "posted by" information */
+    display: none;
   }
 
   .content { /* Node's content wrapper */
@@ -30,15 +31,16 @@
   }
 
 }
-
-.node-promoted { /* A node that has been promoted to the front page */
+$header_size: 2.7em;
+.node-promoted:nth-child(2) { /* A node that has been promoted to the front page */
+  margin-top: 0;
   header {
     .node-title {
       margin-bottom: 1.5em;
       a {
         color: $other-blue;
         text-decoration: none;
-        font-size: 4.5em;
+        font-size: $header_size;
         white-space: nowrap;
         font-family: $helvetica;
       }
@@ -48,8 +50,23 @@
         font-family: papyrus;
         font-size: 2/3 * 2em;
         position: relative;
-        top: -3em;
+        top: -1.75em;
         left: 2em;
+      }
+    }
+  }
+}
+.node-promoted { /* A node that has been promoted to the front page */
+  margin-top: $header_size;
+  header {
+    .node-title {
+      margin-bottom: 1.5em;
+      a {
+        color: $other-blue;
+        text-decoration: none;
+        font-size: $header_size;
+        white-space: nowrap;
+        font-family: $helvetica;
       }
     }
   }

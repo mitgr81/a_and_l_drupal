@@ -10,12 +10,12 @@
 function adorabets_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: main-menu:<front>
-  $menu_links['main-menu:/contact'] = array(
+  // Exported menu link: main-menu:blog
+  $menu_links['main-menu:blog'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => '/contact',
-    'router_path' => '',
-    'link_title' => 'Contact',
+    'link_path' => 'blog',
+    'router_path' => 'blog',
+    'link_title' => 'Blog',
     'options' => array(
       'attributes' => array(
         'title' => '',
@@ -23,10 +23,10 @@ function adorabets_menu_default_menu_links() {
     ),
     'module' => 'menu',
     'hidden' => '0',
-    'external' => '1',
+    'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-47',
+    'weight' => '-48',
   );
   // Exported menu link: main-menu:http://aldesign.zenfolio.com/
   $menu_links['main-menu:http://aldesign.zenfolio.com/'] = array(
@@ -44,14 +44,14 @@ function adorabets_menu_default_menu_links() {
     'external' => '1',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-48',
+    'weight' => '-49',
   );
-  // Exported menu link: main-menu:/blog
-  $menu_links['main-menu:/blog'] = array(
+  // Exported menu link: main-menu:mailto:admin@adorabets.com
+  $menu_links['main-menu:mailto:admin@adorabets.com'] = array(
     'menu_name' => 'main-menu',
-    'link_path' => '/blog',
+    'link_path' => 'mailto:admin@adorabets.com',
     'router_path' => '',
-    'link_title' => 'Blog',
+    'link_title' => 'Contact',
     'options' => array(
       'attributes' => array(
         'title' => '',
@@ -62,11 +62,12 @@ function adorabets_menu_default_menu_links() {
     'external' => '1',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-49',
+    'weight' => '-50',
   );
   // Translatables
   // Included for use with string extractors like potx.
   t('Blog');
+  t('Contact');
   t('Shop');
 
 
