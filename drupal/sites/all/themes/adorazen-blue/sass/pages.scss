@@ -88,11 +88,11 @@ $stripe-count: 36;
   margin: 0 0 0 0.1em;
   font-size: 6em;
   white-space: nowrap;
+  display: inline-block;
   line-height: 1.8em;
   font-family: $georgia;
   color: $blue-or-so;
   span {
-
     text-shadow: 0.07em 0.05em 0.2em #999;
   }
 
